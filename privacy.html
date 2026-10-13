@@ -76,6 +76,7 @@
                 </div>
                 <h2 id="architecture">Architecture</h2>
                 <p>StudyMind is built on a <strong>local-first architecture</strong> with <strong>zero server storage</strong>. The application does not operate a backend that stores your documents, notes or personal data. All processing that can happen on your device happens on your device.</p>
+                <p>The app is a set of static files (HTML, CSS and JavaScript) hosted directly on GitHub Pages and can also be run locally from your own machine. GitHub Pages serves those files as-is; it is not a StudyMind server and it has no database, API or server-side code that could receive your documents, notes or API key. Because no personal user data or document contents ever hit a server owned by us, there is nothing for us to collect, retain or hand over.</p>
                 <p>Because there is no StudyMind server in the middle, there is no StudyMind database that could be breached, sold or synced. Your study material simply is not ours to hold.</p>
 
                 <h2 id="leaves">What leaves your device</h2>
@@ -103,7 +104,7 @@
                 <p>Because your API key and notes live in your browser&rsquo;s local storage, they never leave your device except where you explicitly use them &mdash; for example, your API key is used to authenticate requests <em>you</em> initiate to OpenRouter.</p>
 
                 <h2 id="retention">Data retention</h2>
-                <p>StudyMind maintains <strong>zero server storage</strong>. There are no StudyMind servers holding your data to retain or delete. Your data persists only where you store it locally (browser <code>localStorage</code> and IndexedDB). You can delete it at any time by clearing your browser&rsquo;s site data for this app.</p>
+                <p>StudyMind maintains <strong>zero server storage</strong>. There are no StudyMind servers holding your data to retain or delete. Your data persists only where you store it locally (browser <code>localStorage</code> and IndexedDB). You can delete it at any time with the in-app <strong>Settings &rarr; Clear All Data</strong> button, or by clearing your browser&rsquo;s site data for this app.</p>
 
                 <h2 id="tracking">Tracking and analytics</h2>
                 <ul>
@@ -135,7 +136,8 @@
 
                 <h2 id="controls">Your controls</h2>
                 <ul>
-                    <li><strong>Delete everything:</strong> clear this site&rsquo;s data in your browser settings &mdash; that removes notes (IndexedDB), your API key and the consent record.</li>
+                    <li><strong>Delete everything:</strong> Settings &rarr; <strong>Clear All Data</strong> — one click that wipes your API key, notes, chats, stats and consent record from this browser and restarts the app fresh, like a new user.</li>
+                    <li><strong>Delete everything (browser-level):</strong> clear this site&rsquo;s data in your browser settings &mdash; that removes notes (IndexedDB), your API key and the consent record.</li>
                     <li><strong>Remove your API key:</strong> Settings &rarr; API Key &rarr; Clear.</li>
                     <li><strong>Review consent again:</strong> Settings &rarr; Privacy &amp; Legal &rarr; Review &amp; Re-accept.</li>
                     <li><strong>Use it offline:</strong> the app runs locally; you only need the network for AI generation through your own key.</li>
