@@ -1,0 +1,3 @@
+# StudyMind AI robots.txt
+User-agent: *
+Allow: /

@@ -1,0 +1,24 @@
+# StudyMind AI
+
+> StudyMind AI is a local-first intelligent document learning platform that turns PDF documents into summaries, notes, quizzes, flashcards, simple explanations and study paths using AI.
+
+StudyMind AI runs entirely in the browser. Users upload PDF files, extract text locally with pdf.js, and send it directly to OpenRouter models for generation. There are no accounts, no servers and no tracking: API keys and saved notes stay in the browser (localStorage and IndexedDB).
+
+## Product
+
+- [StudyMind AI](./index.html): The main single-file web application — upload a PDF, then generate summaries, notes, quizzes, flashcards, simplified explanations and more.
+
+## Features
+
+- PDF extraction and multi-file document library
+- AI summary, Q&A, notes and plain-English simplification
+- Quiz generation with MCQ, true/false, fill-in, case study and HOTS questions
+- Flashcards, active recall, revision and exam-brainstorm modes
+- Saved notes with folders, tags, search and bulk actions
+- Fully local storage: keys in localStorage, notes in IndexedDB
+
+## Legal
+
+- [Privacy Policy](./privacy.html): Local-first architecture, zero server storage, no tracking or analytics.
+- [License](./LICENSE): Apache License 2.0 (code only; the Quantivelle name and logo are not licensed).
+- [Trademarks](./trademarks.html): Rules for use of the Quantivelle name and logo.

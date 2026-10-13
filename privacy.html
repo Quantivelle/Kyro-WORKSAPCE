@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — StudyMind AI</title>
+    <meta name="description" content="StudyMind AI privacy policy. Local-first architecture, zero server storage, no tracking, no analytics. Your notes, settings and API key stay on your device.">
+    <meta name="theme-color" content="#171e19">
+    <link rel="icon" type="image/png" href="Branding/favicon.png">
+    <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+    <header class="site-head">
+        <a class="brand" href="index.html">
+            <img src="Branding/logo-mark.png" alt="" draggable="false" oncontextmenu="return false;">
+            <span>StudyMind AI</span>
+        </a>
+        <nav class="legal-nav" aria-label="Legal pages">
+            <a href="privacy.html" aria-current="page">Privacy Policy</a>
+            <a href="trademarks.html">Trademarks</a>
+            <a href="license.html">License</a>
+            <a class="cta" href="index.html">Open App &rarr;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">Legal &middot; Privacy</span>
+            <h1>Privacy Policy</h1>
+            <p class="lede"><strong>StudyMind is local-first. Your data stays on your device.</strong> There are no StudyMind servers, no accounts, no tracking and no analytics. This page explains exactly what happens to your data, in plain language.</p>
+            <div class="meta-row">
+                <span class="hot">Policy v2 &middot; mandatory in-app consent</span>
+                <span>Effective 12 October 2026</span>
+                <span>Local-first &middot; zero server storage</span>
+                <span>Applies to: StudyMind AI web app</span>
+            </div>
+        </section>
+
+        <div class="layout">
+            <aside class="toc" aria-label="Table of contents">
+                <h2>On this page</h2>
+                <ol>
+                    <li><a href="#summary">The short version</a></li>
+                    <li><a href="#architecture">Architecture</a></li>
+                    <li><a href="#leaves">What leaves your device</a></li>
+                    <li><a href="#storage">Where data is stored</a></li>
+                    <li><a href="#retention">Data retention</a></li>
+                    <li><a href="#tracking">Tracking &amp; analytics</a></li>
+                    <li><a href="#consent">In-app consent</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#controls">Your controls</a></li>
+                    <li><a href="#changes">Changes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </aside>
+
+            <article class="doc">
+                <h2 id="summary">The short version</h2>
+                <div class="callout">
+                    <p><span class="co-title">What we collect: nothing.</span>StudyMind has no backend that stores your documents, notes or personal data. Everything that can be processed on your device is processed on your device.</p>
+                    <p>The only data that ever leaves your device is the text extracted from your PDFs, sent <strong>directly from your browser to OpenRouter</strong> for AI processing. StudyMind itself never receives, stores or logs it.</p>
+                </div>
+                <div class="grid2">
+                    <div class="mini">
+                        <h4>Stored on your device</h4>
+                        <p>API key &rarr; <code>localStorage</code><br>Notes &amp; saved output &rarr; IndexedDB<br>Consent record &rarr; <code>localStorage</code></p>
+                    </div>
+                    <div class="mini">
+                        <h4>Sent from your device</h4>
+                        <p>Extracted PDF text &rarr; OpenRouter, only when you run an AI action, only with your own key.</p>
+                    </div>
+                    <div class="mini">
+                        <h4>Never collected</h4>
+                        <p>No accounts, no emails, no cookies, no tracking, no analytics, no telemetry, no crash reports.</p>
+                    </div>
+                </div>
+                <h2 id="architecture">Architecture</h2>
+                <p>StudyMind is built on a <strong>local-first architecture</strong> with <strong>zero server storage</strong>. The application does not operate a backend that stores your documents, notes or personal data. All processing that can happen on your device happens on your device.</p>
+                <p>Because there is no StudyMind server in the middle, there is no StudyMind database that could be breached, sold or synced. Your study material simply is not ours to hold.</p>
+
+                <h2 id="leaves">What leaves your device</h2>
+                <p>The only data that ever leaves your device is the text extracted from your PDFs, which is sent directly from your browser to <strong>OpenRouter</strong> for AI processing. StudyMind itself does not receive, store or log this content.</p>
+                <ul>
+                    <li>The request goes <strong>browser &rarr; OpenRouter</strong>. It is authenticated with <strong>your own API key</strong>, which you supply and which stays in your browser.</li>
+                    <li>Nothing is sent while you are only reading, organizing or re-reading content you already generated.</li>
+                    <li>OpenRouter processes the request to generate your summary, notes, quiz, flashcards or explanation, in line with <em>their</em> policies.</li>
+                </ul>
+
+                <h2 id="storage">Where your data is stored</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr><th>Data</th><th>Storage location</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Extracted PDF text (sent for AI processing)</td><td>Sent directly to OpenRouter; not stored by StudyMind servers</td></tr>
+                            <tr><td>API key</td><td>Your browser&rsquo;s <code>localStorage</code> (on your device only)</td></tr>
+                            <tr><td>Notes</td><td>Your browser&rsquo;s IndexedDB (on your device only)</td></tr>
+                            <tr><td>Privacy consent record</td><td>Your browser&rsquo;s <code>localStorage</code> (on your device only)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Because your API key and notes live in your browser&rsquo;s local storage, they never leave your device except where you explicitly use them &mdash; for example, your API key is used to authenticate requests <em>you</em> initiate to OpenRouter.</p>
+
+                <h2 id="retention">Data retention</h2>
+                <p>StudyMind maintains <strong>zero server storage</strong>. There are no StudyMind servers holding your data to retain or delete. Your data persists only where you store it locally (browser <code>localStorage</code> and IndexedDB). You can delete it at any time by clearing your browser&rsquo;s site data for this app.</p>
+
+                <h2 id="tracking">Tracking and analytics</h2>
+                <ul>
+                    <li><strong>No tracking.</strong> StudyMind does not track your activity across sites or services.</li>
+                    <li><strong>No analytics.</strong> StudyMind does not collect analytics, telemetry, usage statistics or crash reports.</li>
+                    <li><strong>No cookies.</strong> The app uses <code>localStorage</code> and IndexedDB on your device only; there are no advertising or profiling cookies.</li>
+                </ul>
+                <h2 id="consent">In-app consent (why the dialog cannot be skipped)</h2>
+                <p>The first time you open StudyMind &mdash; and again whenever this policy changes to a new version &mdash; the app shows a <strong>Privacy &amp; Data consent dialog</strong>. It is deliberately blocking:</p>
+                <ol>
+                    <li>You must <strong>tick the confirmation checkbox</strong>. The &ldquo;Accept &amp; Continue&rdquo; button stays disabled until you do.</li>
+                    <li>There is <strong>no close button</strong>, clicking the backdrop does nothing, and <kbd>Esc</kbd> does not dismiss it.</li>
+                    <li>While consent is missing, <strong>the entire app is locked</strong> &mdash; content becomes inert, pointer input is blocked, and keyboard focus is trapped inside the dialog.</li>
+                    <li>Your acceptance is stored as a <strong>version-stamped, integrity-checked record</strong>. If it is deleted, corrupted, or made stale by a policy update, the app re-locks and asks again.</li>
+                    <li>The record is <strong>re-verified continuously</strong> (on an interval and whenever the tab regains focus), not just once at page load.</li>
+                </ol>
+                <div class="callout plain">
+                    <p><strong>Open Settings (gear icon) &rarr; Privacy &amp; Legal</strong> at any time to see your consent status, read this policy, review the trademark rules, read the license, or reset your consent so the dialog appears again.</p>
+                </div>
+                <p class="src-note">Technical note: consent enforcement runs entirely in your own browser, as part of the app you are running. It makes accidental or casual bypass impossible. A person who deliberately edits the application source on their own machine can change any front-end behaviour &mdash; that is true of any web app.</p>
+
+                <h2 id="compliance">Compliance</h2>
+                <p>This policy and the StudyMind architecture are designed to comply with:</p>
+                <ul>
+                    <li><strong>DPDP 2023</strong> &mdash; India&rsquo;s Digital Personal Data Protection Act, 2023</li>
+                    <li><strong>GDPR</strong> &mdash; the EU General Data Protection Regulation</li>
+                </ul>
+                <p>Because StudyMind practices zero server storage, no tracking and no analytics, it processes a minimal amount of personal data and stores what it does store locally, under your control.</p>
+
+                <h2 id="controls">Your controls</h2>
+                <ul>
+                    <li><strong>Delete everything:</strong> clear this site&rsquo;s data in your browser settings &mdash; that removes notes (IndexedDB), your API key and the consent record.</li>
+                    <li><strong>Remove your API key:</strong> Settings &rarr; API Key &rarr; Clear.</li>
+                    <li><strong>Review consent again:</strong> Settings &rarr; Privacy &amp; Legal &rarr; Review &amp; Re-accept.</li>
+                    <li><strong>Use it offline:</strong> the app runs locally; you only need the network for AI generation through your own key.</li>
+                </ul>
+
+                <h2 id="changes">Changes to this policy</h2>
+                <p>Any changes to this privacy policy are posted on this page. When the policy version changes, the in-app consent dialog is shown again before the app can be used.</p>
+
+                <h2 id="contact">Contact</h2>
+                <p>Questions about privacy? Open an issue in the project repository and the StudyMind AI maintainers will respond.</p>
+
+                <div class="related">
+                    <a href="privacy.html" aria-current="page">Privacy Policy</a>
+                    <a href="trademarks.html">Trademark Guidelines &rarr;</a>
+                    <a href="license.html">Apache 2.0 License &rarr;</a>
+                    <a href="index.html">Back to the app &rarr;</a>
+                </div>
+
+                <p class="src-note">This page is the official privacy policy for StudyMind AI.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-foot">
+        <div class="foot-brand">StudyMind AI</div>
+        <p>&copy; 2026 StudyMind AI. All rights reserved. Local-first by design &mdash; no tracking, no servers.</p>
+        <p class="tm-note"><a class="tm-mark" href="trademarks.html" title="Trademark guidelines"><img src="Branding/logo-mark.png" alt="Quantivelle logo" draggable="false" oncontextmenu="return false;"><span>Quantivelle&trade;</span></a> &mdash; the Quantivelle name and logo are trademarks of Quantivelle. They are not covered by the Apache License 2.0.</p>
+        <div class="foot-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="trademarks.html">Trademarks</a>
+            <a href="license.html">License</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
