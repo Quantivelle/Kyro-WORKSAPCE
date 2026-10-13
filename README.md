@@ -1,18 +1,36 @@
+<div align="center">
+
+<img src="./Branding/LOGO.png" alt="StudyMind AI logo" width="420">
+
 # StudyMind AI
 
-A local-first intelligent document learning platform that turns PDF documents into summaries, notes, quizzes, flashcards, and simple explanations using AI.
+**Your local-first AI study partner that turns any PDF into summaries, notes, quizzes, and flashcards.**
 
-Everything runs in the browser. PDF text is extracted locally with [pdf.js](https://mozilla.github.io/pdf.js/), then sent directly from your browser to [OpenRouter](https://openrouter.ai/) models. There are no accounts, no backend servers, and no tracking. Your API key and saved notes never leave your device.
+[![Open StudyMind AI](https://img.shields.io/badge/Try%20it%20Live-Open%20StudyMind%20AI-4f46e5?style=for-the-badge&logo=githubpages&logoColor=white)](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
+
+**👉 Click above and start using it right now — no install, no signup, no waiting.**
+**➡️ [https://vaguevault76-ctrl.github.io/StudyMind-AI/](https://vaguevault76-ctrl.github.io/StudyMind-AI/)**
+
+---
+
+Hey there! I'm glad you found your way here. Let me walk you through what you're looking at.
+
+**StudyMind AI** is a document learning platform that lives entirely inside your browser. You hand it a PDF, and it hands you back summaries, study notes, quizzes, flashcards, and plain-English explanations — all powered by AI.
+
+Here's the part you'll appreciate: everything runs locally. We extract your PDF's text with [pdf.js](https://mozilla.github.io/pdf.js/) right on your machine, then send it straight from *your* browser to [OpenRouter](https://openrouter.ai/) models. There are no accounts, no backend servers, and no tracking. Your API key and your saved notes never leave your device.
+
+You don't need to install anything. You don't need to configure anything. Just open the link above and get to work.
+
+</div>
 
 ---
 
 ## Table of contents
 
-- [Features](#features)
-- [How it works](#how-it-works)
+- [What you can do](#what-you-can-do)
+- [How it works for you](#how-it-works-for-you)
 - [Tech stack](#tech-stack)
-- [Run locally](#run-locally)
-- [Deploy on GitHub Pages](#deploy-on-github-pages)
+- [Run it locally](#run-it-locally)
 - [Project structure](#project-structure)
 - [Security](#security)
 - [Privacy](#privacy)
@@ -22,54 +40,54 @@ Everything runs in the browser. PDF text is extracted locally with [pdf.js](http
 
 ---
 
-## Features
+## What you can do
 
-### Document handling
+### Handle your documents your way
 
-- Multi-file PDF document library with drag-and-drop upload
-- Local text extraction with layout, powers, and element detection
-- Hindi-content detection (English documents only for now)
-- Inline PDF viewer with page navigation
+- You get a multi-file PDF library with drag-and-drop upload — drop in as many documents as you like.
+- Text extraction happens locally, with layout, powers, and element detection preserved.
+- Hindi content is detected automatically (English documents only for now).
+- You can read the original PDF inline, with full page navigation.
 
-### AI generation
+### Let the AI do the heavy lifting
 
-- **Summary** — structured document summaries
-- **Q&A** — ask questions grounded in the extracted content
-- **Study notes** — full notes with styles, folders, tags, and search
-- **Simplification** — plain-English explanations of complex text
-- **Quizzes** — MCQ, true/false, fill-in, case study, and HOTS questions
-- **Flashcards** — active recall, revision, and exam-brainstorm modes
-- **Study pack** — one-click generation of combined study materials
-- **Knowledge gap analysis** — learning-path suggestions from the content
-- **Exam optimizer** — exam-focused analysis of the material
-- **Comparison tables** — side-by-side topic comparisons
-- **AI chat assistant** — floating assistant with text-selection actions, per-note chat history, and regeneration
-- **Self-review** — optional AI verification pass that checks output against the source
+- **Summary** — you get a structured breakdown of the whole document.
+- **Q&A** — you ask a question, it answers from the actual extracted content.
+- **Study notes** — you get full notes you can style, file into folders, tag, and search.
+- **Simplification** — you get complex passages rewritten in plain English.
+- **Quizzes** — you can test yourself with MCQ, true/false, fill-in, case study, and HOTS questions.
+- **Flashcards** — you revise with active recall, revision, and exam-brainstorm modes.
+- **Study pack** — you get everything at once with one click.
+- **Knowledge gap analysis** — you receive a learning path based on what the content actually covers.
+- **Exam optimizer** — you get an exam-focused analysis of your material.
+- **Comparison tables** — you can view topics side by side.
+- **AI chat assistant** — you get a floating helper with text-selection actions, per-note chat history, and regeneration.
+- **Self-review** — you can optionally ask the AI to verify its own output against the source.
 
-### Storage and productivity
+### Keep control of your work
 
-- Notes saved locally (IndexedDB) with folders, tags, pin, rename, and bulk actions
-- API keys stored in `localStorage` only
-- Chat history persisted per note
-- Optional onboarding tour and settings panel
+- Your notes are saved locally in IndexedDB, with folders, tags, pin, rename, and bulk actions.
+- Your API key stays in `localStorage` only.
+- Your chat history is persisted per note.
+- You get an optional onboarding tour and a settings panel whenever you want them.
 
 ---
 
-## How it works
+## How it works for you
 
-1. The user drops one or more PDFs into the browser.
-2. pdf.js extracts text locally (no upload to any server).
-3. The extracted text is truncated, optionally combined with a user prompt, and sent directly from the browser to OpenRouter.
-4. The model response is rendered as markdown, sanitized, and enhanced with KaTeX math where present.
-5. Output can be saved as a note, quizzed, turned into flashcards, or discussed in the chat assistant.
+1. You drop one or more PDFs into the browser.
+2. pdf.js extracts the text locally — nothing is uploaded to any server.
+3. The extracted text is truncated, optionally combined with your own prompt, and sent directly from your browser to OpenRouter.
+4. The response comes back as markdown, gets sanitized, and picks up KaTeX math where needed.
+5. You save it as a note, quiz yourself, turn it into flashcards, or keep discussing it in the chat assistant.
 
-There is no application backend. The only outbound network call is to `https://openrouter.ai`.
+There is no application backend. The only outbound network call you make is to `https://openrouter.ai`.
 
 ---
 
 ## Tech stack
 
-All third-party libraries are vendored locally under `vendor/` — no CDN dependencies at runtime.
+All third-party libraries are vendored locally under `vendor/` — you get no CDN dependencies at runtime.
 
 | Library | Purpose |
 | --- | --- |
@@ -82,9 +100,11 @@ The application itself is a single static page (`index.html`) with no build step
 
 ---
 
-## Run locally
+## Run it locally
 
-No build step is required. Open `index.html` in a modern browser, or serve the folder:
+You don't have to. **Just use the live version:** [https://vaguevault76-ctrl.github.io/StudyMind-AI/](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
+
+If you'd rather run it yourself, there's no build step. Open `index.html` in a modern browser, or serve the folder:
 
 ```bash
 # Python
@@ -97,18 +117,6 @@ npx serve .
 Then visit `http://localhost:8080`.
 
 > Opening via `file://` works for basic use, but a local HTTP server is recommended so the PDF worker and fonts load correctly.
-
----
-
-## Deploy on GitHub Pages
-
-1. Push this repository to GitHub.
-2. Open **Settings** → **Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch `main` (or `master`) and folder `/ (root)`, then **Save**.
-5. Wait a minute — the site will be live at `https://<your-username>.github.io/<your-repo>/`.
-
-The `.nojekyll` file is included so GitHub Pages serves the files as-is without Jekyll processing.
 
 ---
 
@@ -148,32 +156,32 @@ The `.nojekyll` file is included so GitHub Pages serves the files as-is without 
 
 ## Security
 
-The app treats PDF text and AI output as untrusted input.
+You should know that the app treats PDF text and AI output as untrusted input — because it does.
 
-- All AI-generated and PDF-derived HTML is sanitized with DOMPurify before being inserted into the page.
+- All AI-generated and PDF-derived HTML is sanitized with DOMPurify before it ever reaches your page.
 - A strict Content-Security-Policy restricts scripts, frames, objects, and network calls to the minimum required.
 - External links use `rel="noopener noreferrer"`.
-- The OpenRouter API key is stored only in the browser's `localStorage` and is never sent to any server other than OpenRouter itself.
+- Your OpenRouter API key is stored only in your browser's `localStorage` and is never sent to any server other than OpenRouter itself.
 
 ---
 
 ## Privacy
 
-- No analytics, no cookies, no tracking.
-- API keys and notes stay in your browser only.
-- See [privacy.html](./privacy.html) for the full policy.
+- You get no analytics, no cookies, and no tracking.
+- Your API keys and notes stay in your browser only.
+- You can read the full policy in [privacy.html](./privacy.html).
 
 ---
 
 ## Browser support
 
-Requires a modern browser with JavaScript enabled. Tested targets are current and recent versions of Chrome, Edge, Firefox, and Safari.
+You'll need a modern browser with JavaScript enabled. Tested targets are current and recent versions of Chrome, Edge, Firefox, and Safari.
 
 ---
 
 ## License
 
-Code is licensed under the [Apache License 2.0](./LICENSE).
+You're free to use the code under the [Apache License 2.0](./LICENSE).
 
 ---
 
