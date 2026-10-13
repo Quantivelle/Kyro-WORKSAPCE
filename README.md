@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./Branding/LOGO.png" alt="StudyMind AI logo" width="420">
+<img src="./Branding/Logo%20horizontal%20curved.png" alt="Quantivelle — StudyMind AI" width="620">
 
 # StudyMind AI
 
@@ -135,10 +135,12 @@ Then visit `http://localhost:8080`.
 ├── robots.txt              # Crawler rules
 ├── .nojekyll               # Disable Jekyll on GitHub Pages
 ├── Branding/
-│   ├── LOGO.png            # Full logo (social / OG image)
-│   ├── logo-mark.png       # App mark (UI + splash)
-│   ├── favicon.png         # Browser tab icon
-│   └── fonts/              # Self-hosted webfonts
+│   ├── LOGO.png                    # Full logo (social / OG image)
+│   ├── Logo horizontal.png         # Horizontal logo (original)
+│   ├── Logo horizontal curved.png  # Horizontal logo used in this README (curved edges + vignette)
+│   ├── logo-mark.png               # App mark (UI + splash)
+│   ├── favicon.png                 # Browser tab icon
+│   └── fonts/                      # Self-hosted webfonts
 └── vendor/                 # Third-party libraries (vendored, offline-friendly)
     ├── pdf.min.js          # pdf.js core
     ├── pdf.worker.min.js   # pdf.js worker
