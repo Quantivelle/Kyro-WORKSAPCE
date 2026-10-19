@@ -19,7 +19,9 @@ Hey there! I'm glad you found your way here. Let me walk you through what you're
 
 Here's the part you'll appreciate: everything runs locally. We extract your PDF's text with [pdf.js](https://mozilla.github.io/pdf.js/) right on your machine, then send it straight from *your* browser to [OpenRouter](https://openrouter.ai/) models. There are no accounts, no backend servers, and no tracking. Your API key and your saved notes never leave your device.
 
-You don't need to install anything. You don't need to configure anything. Just open the link above and get to work.
+You don't need to install anything. You don't need to configure anything. Just open the link above — the landing page explains the product and one click takes you straight into the tool.
+
+The site is split in two: **`index.html`** is the public landing page (what the tool does, how it works, FAQ, and the **Launch Tool** button), and **`app.html`** is the application itself. Both are plain static files with no build step.
 
 </div>
 
@@ -27,6 +29,7 @@ You don't need to install anything. You don't need to configure anything. Just o
 
 ## Table of contents
 
+- [Pages](#pages)
 - [What you can do](#what-you-can-do)
 - [How it works for you](#how-it-works-for-you)
 - [Tech stack](#tech-stack)
@@ -37,6 +40,20 @@ You don't need to install anything. You don't need to configure anything. Just o
 - [Browser support](#browser-support)
 - [License](#license)
 - [Trademark](#trademark)
+
+---
+
+## Pages
+
+The site is a set of static pages with no build step:
+
+| Page | Purpose |
+| --- | --- |
+| `index.html` | SEO landing page — what the tool does, how it works, FAQ, and a prominent **Launch Tool** button into `app.html`. |
+| `app.html` | The application itself — upload, extract, generate, save. |
+| `privacy.html` | Privacy policy. |
+| `trademarks.html` | Trademark guidelines. |
+| `license.html` | Apache 2.0 license (rendered). |
 
 ---
 
@@ -96,7 +113,7 @@ All third-party libraries are vendored locally under `vendor/` — you get no CD
 | [KaTeX](https://katex.org/) | Math rendering |
 | [DOMPurify](https://github.com/cure53/DOMPurify) | HTML sanitization of all AI/external output |
 
-The application itself is a single static page (`index.html`) with no build step and no framework.
+The landing page and the application are both single static pages (`index.html` and `app.html`) with no build step and no framework. The landing page loads no third-party JavaScript at all — every effect on it is hand-written, transform/opacity-only and gated behind `prefers-reduced-motion` and an automatic low-end-device "lite" mode.
 
 ---
 
@@ -104,7 +121,7 @@ The application itself is a single static page (`index.html`) with no build step
 
 You don't have to. **Just use the live version:** [https://vaguevault76-ctrl.github.io/StudyMind-AI/](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
 
-If you'd rather run it yourself, there's no build step. Open `index.html` in a modern browser, or serve the folder:
+If you'd rather run it yourself, there's no build step. Open `index.html` (landing page) or `app.html` (the tool) in a modern browser, or serve the folder:
 
 ```bash
 # Python
@@ -124,7 +141,8 @@ Then visit `http://localhost:8080`.
 
 ```
 .
-├── index.html              # Main application (single-file app)
+├── index.html              # SEO landing page (single file: markup + CSS + JS)
+├── app.html                # Main application (single-file app)
 ├── privacy.html            # Privacy policy
 ├── trademarks.html         # Trademark guidelines
 ├── license.html            # Apache 2.0 license (rendered)
@@ -133,6 +151,7 @@ Then visit `http://localhost:8080`.
 ├── README.md               # This file
 ├── llms.txt                # Machine-readable project summary
 ├── robots.txt              # Crawler rules
+├── sitemap.xml             # XML sitemap for search engines
 ├── .nojekyll               # Disable Jekyll on GitHub Pages
 ├── Branding/
 │   ├── LOGO.png                    # Full logo (social / OG image)

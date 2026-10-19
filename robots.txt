@@ -1,3 +1,5 @@
 # StudyMind AI robots.txt
 User-agent: *
 Allow: /
+
+Sitemap: https://vaguevault76-ctrl.github.io/StudyMind-AI/sitemap.xml
