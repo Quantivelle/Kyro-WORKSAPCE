@@ -6,10 +6,10 @@
 
 **Your local-first AI study partner that turns any PDF into summaries, notes, quizzes, and flashcards.**
 
-[![Open Kyro WORKSAPCE](https://img.shields.io/badge/Try%20it%20Live-Open%20Kyro%20WORKSAPCE-4f46e5?style=for-the-badge&logo=githubpages&logoColor=white)](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
+[![Open Kyro WORKSAPCE](https://img.shields.io/badge/Try%20it%20Live-Open%20Kyro%20WORKSAPCE-4f46e5?style=for-the-badge&logo=githubpages&logoColor=white)](https://quantivelle.github.io/Kyro-WORKSAPCE/)
 
 **👉 Click above and start using it right now — no install, no signup, no waiting.**
-**➡️ [https://vaguevault76-ctrl.github.io/StudyMind-AI/](https://vaguevault76-ctrl.github.io/StudyMind-AI/)**
+**➡️ [https://vaguevault76-ctrl.github.io/StudyMind-AI/]([(https://quantivelle.github.io/Kyro-WORKSAPCE/).].)**
 
 ---
 
