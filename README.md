@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./Branding/Logo%20horizontal%20curved.png" alt="Quantivelle — StudyMind AI" width="620">
+<img src="./Branding/Logo%20horizontal%20curved.png" alt="Quantivelle — Kyro WORKSAPCE" width="620">
 
-# StudyMind AI
+# Kyro WORKSAPCE
 
 **Your local-first AI study partner that turns any PDF into summaries, notes, quizzes, and flashcards.**
 
-[![Open StudyMind AI](https://img.shields.io/badge/Try%20it%20Live-Open%20StudyMind%20AI-4f46e5?style=for-the-badge&logo=githubpages&logoColor=white)](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
+[![Open Kyro WORKSAPCE](https://img.shields.io/badge/Try%20it%20Live-Open%20Kyro%20WORKSAPCE-4f46e5?style=for-the-badge&logo=githubpages&logoColor=white)](https://vaguevault76-ctrl.github.io/StudyMind-AI/)
 
 **👉 Click above and start using it right now — no install, no signup, no waiting.**
 **➡️ [https://vaguevault76-ctrl.github.io/StudyMind-AI/](https://vaguevault76-ctrl.github.io/StudyMind-AI/)**
@@ -15,7 +15,7 @@
 
 Hey there! I'm glad you found your way here. Let me walk you through what you're looking at.
 
-**StudyMind AI** is a document learning platform that lives entirely inside your browser. You hand it a PDF, and it hands you back summaries, study notes, quizzes, flashcards, and plain-English explanations — all powered by AI.
+**Kyro WORKSAPCE** is a document learning platform that lives entirely inside your browser. You hand it a PDF, and it hands you back summaries, study notes, quizzes, flashcards, and plain-English explanations — all powered by AI.
 
 Here's the part you'll appreciate: everything runs locally. We extract your PDF's text with [pdf.js](https://mozilla.github.io/pdf.js/) right on your machine, then send it straight from *your* browser to [OpenRouter](https://openrouter.ai/) models. There are no accounts, no backend servers, and no tracking. Your API key and your saved notes never leave your device.
 
@@ -208,4 +208,4 @@ You're free to use the code under the [Apache License 2.0](./LICENSE).
 
 ## Trademark
 
-**Quantivelle™** and the Quantivelle logo are trademarks of Quantivelle. The open-source license covers the code only; use of the brand assets requires permission. See [trademarks.html](./trademarks.html).
+**Quantivelle™**, **Kyro WORKSAPCE™** and the Quantivelle logo are trademarks of Quantivelle. The open-source license covers the code only; use of the brand assets requires permission. See [trademarks.html](./trademarks.html).

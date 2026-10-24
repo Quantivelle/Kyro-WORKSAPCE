@@ -1,4 +1,4 @@
-# StudyMind AI robots.txt
+# Kyro WORKSAPCE robots.txt
 User-agent: *
 Allow: /
 
